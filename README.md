@@ -10,3 +10,5 @@ Make sure you created a loss_image folder in your code
 
 # The model that is trained by original author:
 completionnet_places2.t7 (upload it later, or you can search it and download, not too difficult). Remeber to put in your folder.
+
+# Good example their trained model.
