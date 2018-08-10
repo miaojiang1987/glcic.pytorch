@@ -1,8 +1,9 @@
 NAME: 'reproducing'
+IS_TRAIN: true
 
 DATASET:
-    TRAINDIR: '/home/storage/wuxian/ATR/train/image/'
-    VALDIR: '/home/storage/wuxian/ATR/test/image/'
+    TRAINDIR: 'dataset/train'
+    VALDIR: 'dataset/test'
     INPUT_RES: 256
     LOCAL_RES: 128
     HOLE_MIN: 32
@@ -12,10 +13,14 @@ DATASET:
 LOSS:
   ALPHA: 0.0004
 
-TRAIN_G_EPOCHES: -1
-TRAIN_D_EPOCHES: 6
+TRAIN_G_EPOCHES: 100
+TRAIN_D_EPOCHES: 30
   
-INIT: '/home/lrl/Siggraph2018/glcic/src/completionnet_places2.t7'
+INIT: 'completionnet_places2.t7'
+INIT_G: ~
+INIT_D: ~
+TOTAL_EPOCHES: 500 
+
 
 SOLVER:
   WORKERS: 4
